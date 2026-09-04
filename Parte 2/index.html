@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Produtos</title>
+</head>
+<body>
+    <header>
+        <h1>Produtos</h1>
+    </header>
+    
+    <main>
+        <p>Lista de produtos disponíveis.</p>
+        
+        <section>
+            <h2>Produtos disponíveis</h2>
+            
+            <!-- Produto 1 -->
+            <div>
+                <img src="pcNovo.png" alt="Foto do Pc Novo">
+                <p><strong>Pc novo</strong></p>
+                <p>R$ 1.500,00</p>
+                <a href="/detalhes/1">Ver detalhes</a>
+            </div>
+            
+            <!-- Produto 2 -->
+            <div>
+                <img src="pcVelho.png" alt="Foto do Pc antigo">
+                <p><strong>Pc Antigo</strong></p>
+                <p>R$ 700,00</p>
+                <a href="/detalhes/2">Ver detalhes</a>
+            </div>
+            
+            <!-- Produto 3 -->
+            <div>
+                <img src="hd.png" alt="Foto do hd">
+                <p><strong>HD</strong></p>
+                <p>R$ 150,00</p>
+                <a href="/detalhes/3">Ver detalhes</a>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Cadastrar produto</h2>
+            <form action="/cadastrar" method="POST">
+                <label for="nome">Nome do Produto:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="preco">Preço:</label>
+                <input type="text" id="preco" name="preco" required>
+                
+                <label for="imagem">Link da Imagem:</label>
+                <input type="text" id="imagem" name="imagem">
+                
+                <button type="submit">Cadastrar Novo Produto</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Minha loja</p>
+    </footer>
+</body>
+</html>
